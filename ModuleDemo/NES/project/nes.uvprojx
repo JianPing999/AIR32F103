@@ -10,13 +10,13 @@
       <TargetName>nes</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6190000::V6.19::ARMCLANG</pCCUsed>
+      <pCCUsed>6210000::V6.21::ARMCLANG</pCCUsed>
       <uAC6>1</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>AIR32F103CB</Device>
           <Vendor>Generic</Vendor>
-          <PackID>Keil.AIR32F103_DFP.1.1.4</PackID>
+          <PackID>Keil.AIR32F103_DFP.1.1.9</PackID>
           <PackURL>https://luatos.com/t/air32f103/</PackURL>
           <Cpu>IRAM(0x20000000,0x8000) IROM(0x08000000,0x20000) CPUTYPE("Cortex-M3") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -137,7 +137,7 @@
             <DriverSelection>4099</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
-          <Flash2>BIN\CMSIS_AGDI.dll</Flash2>
+          <Flash2>BIN\UL2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
@@ -247,7 +247,7 @@
               <IRAM>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x18000</Size>
+                <Size>0x8000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
@@ -402,7 +402,7 @@
             <File>
               <FileName>startup_air32f10x.s</FileName>
               <FileType>2</FileType>
-              <FilePath>C:\Users\qq147\Desktop\air32f103\Libraries\STARTUP\arm\startup_air32f10x.s</FilePath>
+              <FilePath>..\..\..\Libraries\STARTUP\arm\startup_air32f10x.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -412,47 +412,47 @@
             <File>
               <FileName>air32f10x_exti.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:\Users\qq147\Desktop\air32f103\Libraries\AIR32F10xLib\src\air32f10x_exti.c</FilePath>
+              <FilePath>..\..\..\Libraries\AIR32F10xLib\src\air32f10x_exti.c</FilePath>
             </File>
             <File>
               <FileName>air32f10x_rcc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:\Users\qq147\Desktop\air32f103\Libraries\AIR32F10xLib\src\air32f10x_rcc.c</FilePath>
+              <FilePath>..\..\..\Libraries\AIR32F10xLib\src\air32f10x_rcc.c</FilePath>
             </File>
             <File>
               <FileName>air32f10x_rcc_ex.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:\Users\qq147\Desktop\air32f103\Libraries\AIR32F10xLib\src\air32f10x_rcc_ex.c</FilePath>
-            </File>
-            <File>
-              <FileName>air32f10x_usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>C:\Users\qq147\Desktop\air32f103\Libraries\AIR32F10xLib\src\air32f10x_usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>misc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>C:\Users\qq147\Desktop\air32f103\Libraries\AIR32F10xLib\src\misc.c</FilePath>
-            </File>
-            <File>
-              <FileName>system_air32f10x.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>C:\Users\qq147\Desktop\air32f103\Libraries\AIR32F10xLib\src\system_air32f10x.c</FilePath>
+              <FilePath>..\..\..\Libraries\AIR32F10xLib\src\air32f10x_rcc_ex.c</FilePath>
             </File>
             <File>
               <FileName>air32f10x_dma.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:\Users\qq147\Desktop\air32f103\Libraries\AIR32F10xLib\src\air32f10x_dma.c</FilePath>
-            </File>
-            <File>
-              <FileName>air32f10x_spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>C:\Users\qq147\Desktop\air32f103\Libraries\AIR32F10xLib\src\air32f10x_spi.c</FilePath>
+              <FilePath>..\..\..\Libraries\AIR32F10xLib\src\air32f10x_dma.c</FilePath>
             </File>
             <File>
               <FileName>air32f10x_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>C:\Users\qq147\Desktop\air32f103\Libraries\AIR32F10xLib\src\air32f10x_gpio.c</FilePath>
+              <FilePath>..\..\..\Libraries\AIR32F10xLib\src\air32f10x_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>air32f10x_spi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\Libraries\AIR32F10xLib\src\air32f10x_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>air32f10x_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\Libraries\AIR32F10xLib\src\air32f10x_usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\Libraries\AIR32F10xLib\src\misc.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_air32f10x.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\Libraries\AIR32F10xLib\src\system_air32f10x.c</FilePath>
             </File>
           </Files>
         </Group>
