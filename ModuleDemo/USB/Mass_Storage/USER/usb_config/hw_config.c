@@ -128,6 +128,7 @@ void USB_Interrupts_Config(void)
  
 	/* Configure the EXTI line 18 connected internally to the USB IP */
 	EXTI_ClearITPendingBit(EXTI_Line18);        //  开启线18上的中断
+    EXTI_StructInit(&EXTI_InitStructure);
 	EXTI_InitStructure.EXTI_Line = EXTI_Line18; // USB resume from suspend mode
 	EXTI_InitStructure.EXTI_Trigger = EXTI_Trigger_Rising;	//line 18上事件上升降沿触发
 	EXTI_InitStructure.EXTI_LineCmd = ENABLE;
